@@ -26,6 +26,10 @@ allPosts = allPosts.sort((a, b) => new Date(b.publishDate).valueOf() - new Date(
 ---
 <html lang="en">
   <head>
+    <div class="bg-white rounded shadow border p-6 w-64">
+      <h5 class="text-3xl font-bold mb-4 mt-0">My Title</h5>
+      <p class="text-gray-700 text-sm">Content goes here</p>
+    </div>
     <BaseHead title={title} description={description} permalink={permalink} />
     <link rel="stylesheet" href={Astro.resolve('../styles/blog.css')} />
     <link rel="stylesheet" href={Astro.resolve('../styles/global.css')}>
